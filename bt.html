@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketing Địa Phương - Bến Tre | Tralalero tralala</title>
+    <style>
+        /* --- CÀI ĐẶT MÀU SẮC & FONT --- */
+        :root {
+            --primary-green: #2E8B57; /* Xanh lá dừa */
+            --coconut-brown: #8B4513; /* Nâu vỏ dừa */
+            --bg-cream: #FDF5E6;      /* Kem nền nã */
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-cream);
+            color: #333;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; /* Ẩn thanh cuộn ngang */
+        }
+
+        /* --- HIỆU ỨNG DỪA BAY --- */
+        .floating-emoji {
+            position: fixed;
+            bottom: -50px;
+            font-size: 24px;
+            animation: floatUp 10s linear infinite;
+            z-index: 9999;
+            pointer-events: none; /* Để không che nút bấm */
+        }
+        @keyframes floatUp {
+            0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+            100% { transform: translateY(-110vh) rotate(360deg); opacity: 0; }
+        }
+
+        /* --- BỐ CỤC CHÍNH --- */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        header {
+            padding: 60px 20px;
+            background: linear-gradient(135deg, var(--primary-green), #228B22);
+            color: var(--white);
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        h2 {
+            color: var(--coconut-brown);
+            border-bottom: 2px dashed var(--primary-green);
+            display: inline-block;
+            padding-bottom: 5px;
+            margin-top: 40px;
+        }
+
+        p.subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        /* --- CÁC KHUNG CHỨA NỘI DUNG --- */
+        .card {
+            background: var(--white);
+            border-radius: 20px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            border: 1px solid #eee;
+        }
+
+        /* Khung ảnh Poster */
+        .poster-placeholder {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            border: 2px solid var(--primary-green);
+        }
+
+        /* Khung Video */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* Tỉ lệ 16:9 */
+            height: 0;
+            overflow: hidden;
+            border-radius: 15px;
+            background: #000;
+        }
+        .video-container iframe, .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Nút tải PDF */
+        .btn-download {
+            display: inline-block;
+            background-color: var(--coconut-brown);
+            color: var(--white);
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 2px solid var(--white);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+        }
+        .btn-download:hover {
+            transform: translateY(-3px);
+            background-color: var(--primary-green);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+        }
+
+        footer {
+            margin-top: 50px;
+            color: #666;
+            font-size: 0.9rem;
+            padding-bottom: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Xứ Dừa Bến Tre</h1>
+        <p class="subtitle">Marketing địa phương - Tralalero tralala</p>
+    </header>
+
+    <div class="container">
+        
+        <div class="card">
+            <h2>Poster</h2>
+            <p>Ghi j ở đây g</p>
+            <img src="C:\Users\Admin\Desktop\MĐP\UEL_Logo final-09.png" alt="Poster Bến Tre" class="poster-placeholder">
+        </div>
+
+        <div class="card">
+            <h2>Video</h2>
+            <p>Hành trình khám phá vẻ đẹp xứ Dừa</p>
+            <div class="video-container">
+                <iframe src="https://drive.google.com/file/d/19LD7biElHvdgxOOz8NTAMTRshw197O4w/preview" width="640" height="480" allow="autoplay"></iframe>
+            </div>
+        </div>
+
+        </div>
+	<div class="card" style="background-color: #e8f5e9;">
+    		<h2>Tiểu luận</h2>
+    		<p>Đọc toàn bộ bài tiểu luận của Tralalero tralala tại đây.</p>
+    		<br>
+    
+   		<div style="width: 100%; height: 600px; margin-bottom: 20px; border: 2px solid #2E8B57; border-radius: 10px; overflow: hidden; background: white;">
+        		<iframe src="https://drive.google.com/file/d/12ogcb7ZqNsu1tU9EDommglSo_FziCV7G/preview" width="100%" height="100%" style="border: none;"></iframe>
+   		</div>
+
+    		<div style="text-align: center;">
+        		<a href="https://drive.google.com/uc?export=download&id=12ogcb7ZqNsu1tU9EDommglSo_FziCV7G" class="btn-download">
+            			⬇️ Tải Tiểu luận
+        		</a>
+    		</div>
+	</div>
+        <footer>
+            Created by 🥥 Tralalero tralala 🥥<br>
+            University of Economics and Law (UEL)
+        </footer>
+    </div>
+
+    <script>
+        function createEmoji() {
+            const emojis = ["🥥", "🌴", "💚", "🛶", "V", "VN", "BT"]; 
+            const emoji = document.createElement("div");
+            emoji.innerText = emojis[Math.floor(Math.random() * emojis.length)];
+            emoji.classList.add("floating-emoji");
+            emoji.style.left = Math.random() * 100 + "vw"; // Vị trí ngẫu nhiên theo chiều ngang
+            emoji.style.animationDuration = Math.random() * 5 + 5 + "s"; // Tốc độ bay ngẫu nhiên
+            emoji.style.opacity = Math.random();
+            emoji.style.fontSize = Math.random() * 20 + 20 + "px"; // Kích thước ngẫu nhiên
+            
+            document.body.appendChild(emoji);
+            
+            // Xóa emoji sau khi bay xong để nhẹ máy
+            setTimeout(() => { emoji.remove(); }, 10000);
+        }
+        // Tạo mưa dừa liên tục
+        setInterval(createEmoji, 700); 
+    </script>
+</body>
+</html>
